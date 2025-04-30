@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inviz Crypt - Coming Soon</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #121212;
+      color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .container {
+      max-width: 400px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: #e63946; /* Crimson red accent */
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      color: #ccc;
+    }
+
+    .email-input {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    input[type="email"] {
+      padding: 0.75rem 1rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      flex: 1;
+      outline: none;
+    }
+
+    button {
+      background: #e63946;
+      border: none;
+      color: white;
+      padding: 0 1.5rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #b32b36;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <h1>Inviz Crypt</h1>
+    <p>Our website is coming soon. Stay tuned!</p>
+    <form onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+      <div class="email-input">
+        <input type="email" placeholder="Enter your email" required aria-label="Email address" />
+        <button type="submit">Notify Me</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
